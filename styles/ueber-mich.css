@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*============
 Navigationbar
 ===============*/
@@ -53,59 +52,3 @@ Navigationbar
 }
 
 
-=======
-/*============
-Navigationbar
-===============*/
-.navigation::after {
-  content: ""; /*leer Lassen für Platz halter*/
-  position: absolute;
-  inset: 0; /*Abstände 0 zur POSITION RELATIVE*/
-  background: url("../assets/icons/heroBackgroundPastry.jpg");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.1;
-  z-index: -1;
-}
-
-/*======================
-  MAINBEREREICH
-========================*/
-
-.ueberMich {
-  display: flex;
-  min-height: 60vh;
-  max-width: auto;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.portraitueberMich {
-  height: 400px;
-  width: 350px;
-  margin-top: 4rem;
-  padding-left: 3rem;
-  max-width: 600px;
- 
-}
-
-.uebermichText {
-  padding-right: 5rem;
-  align-self: start;
-  margin-top: 2rem;
-  margin-right: 3rem;
-  max-width: 600px;
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-style: italic;
-}
-
-.ueberMichBeschreibung {
-  font-size: 20px;
-  font-style: italic;
-  text-align: center;
-}
-
-
->>>>>>> a0b5974ddaec58aa5713eee0e89cc6032497c1cd

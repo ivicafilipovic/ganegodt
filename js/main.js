@@ -8,7 +8,7 @@ skillContainer.each(function () {
 
   for (var i = 0; i < skillLevel; i++) {
     var img = $("<img>", {
-      src: "../assets/icons/chefSVG.svg",
+      src: "./assets/icons/chefSVG.svg",
       alt: "Female Chef",
       class: "skillImg",
     });
