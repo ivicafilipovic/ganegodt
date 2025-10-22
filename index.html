@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ganegodt-Leckes Essen, Rezepte und Süssigkeiten</title>
+    <!-- GOOGLE FONT SCRIPT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Modern+Antiqua&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GOOGLE FONT SCRIPT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Modern+Antiqua&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome DNS Script -->
+    <script
+      src="https://kit.fontawesome.com/3760fcb06d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Externes CSS Script -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <!-------------------Navigationsmenue---------------------->
+ 
+      <nav class="navigation">
+        <div class="leftLogo">
+          <img
+            class="logoGanegodt"
+            src="./assets/icons/Design_ohne_Titel_Logos_ohne_Hintergrund.png"
+            alt="GanegodtLogo"
+          />
+        </div>
+        <ul class="list">
+          <li><a href="./index.html" aria-current="page">Home</a></li>
+          <li><a href="./ueber-mich.html">Über mich</a></li>
+
+          <!-------------------Dropdownmenue---------------------->
+
+          <li class="dropDown">
+            <a href="./rezepte.html">Rezepte</a>
+            <ul class="subMenu">
+              <li><a href="./torten.html">Torten</a></li>
+              <li><a href="./snacks.html">Snacks</a></li>
+              <li><a href="./desserts.html">Desserts</a></li>
+            </ul>
+          </li>
+
+          <li><a href="./kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="rightItem">
+          <form action="#">
+            <input
+              id="SearchInput"
+              type="search"
+              name="search"
+              placeholder="Suche"
+              aria-label="Suche"
+            />
+          </form>
+        </div>
+      </nav>
+ 
+
+    <!-------------------HeroBereich---------------------->
+
+    <header class="titelQuote">
+      <h1>Leckeres Essen, Rezepte und Süssigkeiten</h1>
+      <div class="quoteMe">
+        <h2 class="quoteIntro">
+          Hier findest du leckere Alltagsgerichte und viele Rezepte für
+          köstliche Süßigkeiten – genau das ist meine Leidenschaft. Lass dich
+          inspirieren! Du fragst dich, was Ganegodt bedeutet? Ganegodt ist
+          dänisch und heißt Gaumenschmaus – und genau das möchte ich dir bieten!
+        </h2>
+        <h3>
+
+          
+        </h3>
+
+        <div class="portrait">
+          <img
+            class="portraitImg"
+            src="../assets/images/portrait/portraitkatrine.avif"
+            alt="PortraitVonDerBloggerin"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-------------------Gridrezepte---------------------->
+
+    <h3>MEINE LIEBLINGS REZEPTE</h3>
+
+    <section id="rezepte">
+      <!--Rezept 1-->
+      <div class="rezeptItem1">
+        <img
+          class="rezeptBilder"
+          src="../assets/images/snacks/spinatwaffeln2.avif"
+          alt="Spinatwaffel"
+        />
+        <h4 class="rezeptName1">Spinatwaffel</h4>
+        <p class="rezeptBeschreibung">
+          „Leckere grüne Spinatwaffeln – herzhaft, gesund, um heimlich etwas
+          mehr Gemüse zu genießen. Schnell gemacht mit Haferflocken, Spinat und
+          viel Geschmack!“
+        </p>
+        <div class="rezeptFooter">
+          <div class="rezeptZeit">
+            <img
+              class="backingClock"
+              src="../assets/icons/clockSVG.svg"
+              alt="Clock"
+            />
+            <p>15 Min</p>
+          </div>
+          <div class="rezeptSkills" data-skill="1">
+            <p>Skills:</p>
+            <div class="skillIcons"></div>
+          </div>
+        </div>
+      </div>
+      <!--Rezept 2-->
+      <div class="rezeptItem2">
+        <img
+          class="rezeptBilder"
+          src="../assets/images/torten/beerentorte2.avif"
+          alt="Beerentorte"
+        />
+        <h4 class="rezeptName2">Beerentorte</h4>
+        <p class="rezeptBeschreibung">
+          „Beerentorte – süß, fruchtig und unwiderstehlich lecker! Perfekt für
+          jeden Anlass, bei dem man Eindruck machen möchte.“
+        </p>
+        <div class="rezeptFooter">
+          <div class="rezeptZeit">
+            <img
+              class="backingClock"
+              src="../assets/icons/clockSVG.svg"
+              alt="Clock"
+            />
+            <p>2-4 Stunden</p>
+          </div>
+          <div class="rezeptSkills" data-skill="3">
+            <p>Skills:</p>
+            <div class="skillIcons"></div>
+          </div>
+        </div>
+      </div>
+      <!--Rezept 3-->
+      <div class="rezeptItem3">
+        <img
+          class="rezeptBilder"
+          src="assets/images/torten/frühlingstarte_von_oben.avif"
+          alt="Frühlingstarte"
+        />
+        <h4 class="rezeptName3">Frühlings Tarte</h4>
+        <p class="rezeptBeschreibung">
+          „Mmmh, lecker! Diese Spargel-Poulet-Tarte überzeugt mit Geschmack und
+          einfacher Zubereitung.-Perfekt für Spargelsaison und vielseitig“
+          kombinierbar
+        </p>
+        <div class="rezeptFooter">
+          <div class="rezeptZeit">
+            <img
+              class="backingClock"
+              src="../assets/icons/clockSVG.svg"
+              alt="Clock"
+            />
+            <p>50 Min</p>
+          </div>
+          <div class="rezeptSkills" data-skill="2">
+            <p>Skills:</p>
+            <div class="skillIcons"></div>
+          </div>
+        </div>
+      </div>
+      <!--Rezept 4-->
+      <div class="rezeptItem4">
+        <img
+          class="rezeptBilder"
+          src="assets/images/desserts/limettenkuchen_mit_Muenze_LImette_Frosting.avif"
+          alt="Limettenkuchen"
+        />
+        <h4 class="rezeptName4">Limettenkuchen mit Münze-Limette</h4>
+        <p class="rezeptBeschreibung">
+          „Frischer Limettenkuchen mit einem Hauch Minze – saftig, zitronig und
+          leicht aromatisch. Perfekt für alle, die fruchtige Leckereien lieben
+          und den Sommer auf der Zunge spüren wollen!“
+        </p>
+        <div class="rezeptFooter">
+          <div class="rezeptZeit">
+            <img
+              class="backingClock"
+              src="../assets/icons/clockSVG.svg"
+              alt="Clock"
+            />
+            <p>60 Minuten</p>
+          </div>
+          <div class="rezeptSkills" data-skill="1">
+            <p>Skills:</p>
+            <div class="skillIcons"></div>
+          </div>
+        </div>
+      </div>
+      <!--Rezept 5-->
+      <div class="rezeptItem5">
+        <img
+          class="rezeptBilder"
+          src="assets/images/torten/muerbeteig_mit_Haselnussfüllung.avif"
+          alt="Mürbeteig mit Haselnuss"
+        />
+        <h4 class="rezeptName5">Mürbeteig-Tarte</h4>
+        <p class="rezeptBeschreibung">
+          „Diese Tarte besteht aus einem knusprigen Mürbeteig und einer
+          Haselnussfüllung mit Zimt und Ingwer. Getoppt wird die Tarte mit einer
+          seidig weichen Milchschokolade Crémeux.“
+        </p>
+        <div class="rezeptFooter">
+          <div class="rezeptZeit">
+            <img
+              class="backingClock"
+              src="../assets/icons/clockSVG.svg"
+              alt="Clock"
+            />
+            <p>60 Min / 12 Stunden Ruhezeit</p>
+          </div>
+          <div class="rezeptSkills" data-skill="2">
+            <p>Skills:</p>
+            <div class="skillIcons"></div>
+          </div>
+        </div>
+      </div>
+      <!--Rezept 6-->
+      <div class="rezeptItem6">
+        <img
+          class="rezeptBilder"
+          src="assets/images/desserts/muffins_mit_karamellschokolade_oben.avif"
+          alt="Muffins mit Karamelschokolade"
+        />
+        <h4 class="rezeptName6">
+          Muffin mit Karamellschokolade <br />&#38; Rhabarberkompott
+        </h4>
+        <p class="rezeptBeschreibung">
+          „Leckere Rhabarber-Karamell-Muffins – perfekt, um Reste von Kompott
+          oder Beerenmousse zu verwerten! Saftig, süß und mit einer feinen
+          Karamellnote, bringen sie Freude auf jeden Frühstückstisch oder als
+          süßer Snack für Freunde und Familie.“
+        </p>
+        <div class="rezeptFooter">
+          <div class="rezeptZeit">
+            <img
+              class="backingClock"
+              src="../assets/icons/clockSVG.svg"
+              alt="Clock"
+            />
+            <p>60 Min</p>
+          </div>
+          <div class="rezeptSkills" data-skill="1">
+            <p>Skills:</p>
+            <div class="skillIcons"></div>
+          </div>
+        </div>
+      </div>
+      <!--Rezept 7-->
+      <div class="rezeptItem7">
+        <img
+          class="rezeptBilder"
+          src="assets/images/torten/pistazientarte_limette_thymian_oben.avif"
+          alt="Pistazientarte"
+        />
+        <h4 class="rezeptName7">
+          Pistazientarte mit Thymian <br />&#38; Limette
+        </h4>
+        <p class="rezeptBeschreibung">
+          „Fruchtig-frische Pistazientarte mit Thymian und Limette –
+          zart-knuspriger Boden trifft auf cremige Pistazienfüllung, verfeinert
+          mit aromatischem Thymian und spritziger Limette.“
+        </p>
+        <div class="rezeptFooter">
+          <div class="rezeptZeit">
+            <img
+              class="backingClock"
+              src="../assets/icons/clockSVG.svg"
+              alt="Clock"
+            />
+            <p>2.5 Stunden</p>
+          </div>
+          <div class="rezeptSkills" data-skill="1">
+            <p>Skills:</p>
+            <div class="skillIcons"></div>
+          </div>
+        </div>
+      </div>
+      <!--Rezept 8-->
+      <div class="rezeptItem8">
+        <img
+          class="rezeptBilder"
+          src="assets/images/torten/zitronetarte_von_oben.avif"
+          alt="Zitronentarte"
+        />
+        <h4 class="rezeptName8">Tarte mit Zitrone und Thymian</h4>
+        <p class="rezeptBeschreibung">
+          „Frische Zitronen-Thymian-Tarte – knuspriger Boden trifft auf cremige,
+          fruchtige Füllung mit einer feinen Note von Thymian. Ein leichter,
+          aromatischer Genuss für jede Gelegenheit!“
+        </p>
+        <div class="rezeptFooter">
+          <div class="rezeptZeit">
+            <img
+              class="backingClock"
+              src="../assets/icons/clockSVG.svg"
+              alt="Clock"
+            />
+            <p>60 Min / 5 Stunden Wartezeit</p>
+          </div>
+          <div class="rezeptSkills" data-skill="3">
+            <p>Skills:</p>
+            <div class="skillIcons"></div>
+          </div>
+        </div>
+      </div>
+      <!--Rezept 9-->
+      <div class="rezeptItem9">
+        <img
+          class="rezeptBilder"
+          src="assets/images/snacks/overnight_oats_mit_chiasamenquarkfrüchten.avif"
+          alt="overNightOats"
+        />
+        <h4 class="rezeptName9">
+          Overnight Oats mit Chiasamen,<br />Quark &#38; Früchte
+        </h4>
+        <p class="rezeptBeschreibung">
+          „Im hektischen Alltag fehlt oft die Zeit für ein großes, leckeres
+          Frühstück. Overnight Oats – sind die perfekte Alternative: schnell
+          vorbereitet, lecker im Geschmack und sättigend für den ganzen Morgen.“
+        </p>
+        <div class="rezeptFooter">
+          <div class="rezeptZeit">
+            <img class="backingClock" src="../assets/icons/clockSVG.svg" "
+            alt="Clock" />
+            <p>5 Min</p>
+          </div>
+          <div class="rezeptSkills" data-skill="1">
+            <p>Skills:</p>
+            <div class="skillIcons"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------------Footerbereich---------------------->
+    <footer>
+      <!-- Social Media Logos -->
+      <h5>Follow me on on</h5>
+      <div id="socialMedia">
+        <a
+          href="https://www.facebook.com/Ganegodt/"
+          target="_blank"
+          rel="noopener noreferrer"
+          rel="noreferrer"
+          aria-label="Facebook"
+        >
+          <i
+            class="fa-brands fa-square-facebook fa-3x"
+            style="color: #1877f2; margin-right: 2rem"
+          ></i
+        ></a>
+        <a
+          href="https://www.instagram.com/ganegodt/?hl=de"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          ><i
+            class="fa-brands fa-square-instagram fa-3x"
+            style="color: #dd2a7b; margin-right: 2rem"
+          ></i
+        ></a>
+        <a
+          href="https://de.pinterest.com/ganegodt/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Pinterest"
+          ><i
+            class="fa-brands fa-square-pinterest fa-3x"
+            style="color: #e60023; margin-left: 10px"
+          ></i
+        ></a>
+        <a
+          href="mailto:ganegodt@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Email"
+        >
+          <i
+            class="fa-solid fa-square-envelope fa-3x"
+            style="color: #e4863a; margin-left: 2rem"
+          ></i
+        ></a>
+      </div>
+      <div id="bottomFooter">
+        <div id="copyright">
+          <i class="fa-solid fa-copyright fa-lg"></i>
+          <img
+            class="footerLogo"
+            src="assets/icons/Design_ohne_Titel_Logos_ohne_Hintergrund.png"
+            style="width: 90px; height: 50px"
+            alt="Logo"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- JQUERY Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Externe Javascript Datei -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
