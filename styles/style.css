@@ -1,0 +1,339 @@
+/*============
+Navigationbar
+===============*/
+
+body {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+  border-bottom: 10px solid transparent;
+  border-image: linear-gradient(to right, transparent, #e75480, transparent) 1;
+  cursor: pointer;
+} /* Um eine farbige LInie unterhalb der Navbar zu erstellen*/
+
+/* .rightItem dient nur als Platzhalte, eventuell als Searchbutton verwenden*/
+
+
+.leftLogo,
+.rightItem {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+  gap: 30px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: "Playfair Display", serif;
+  margin-right: 1.6rem;
+}
+
+.list li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.list a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 0;
+  margin: 0;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+#SearchInput{
+  display: flex;
+  width: 250px;
+  height: 40px;
+  text-align: start;
+  padding-left: 1rem;
+  font-size: 1rem;  
+  border: solid #e75480;
+  border-radius: 30px;
+  outline: none;
+box-shadow: none;
+}
+
+/* Dropdown Untermenue gestalung*/
+.subMenu {
+  opacity: 0;
+  visibility: hidden; /* sanftes Einblenden*/
+  transform: translateY(
+    -5px
+  ); /* Starten versetzten von oben und gleitet nach unten*/
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Weiche Bewegung*/
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fffafa;
+  border: 1px solid #ddd;
+  min-width: 180px;
+  font-weight: bolder;
+  z-index: 10;
+}
+
+.subMenu li {
+  padding: 8px 12px;
+}
+
+.subMenu li:hover {
+  background: #f0f0f0;
+}
+
+/* Wenn man über das Hauptmenü-Element fährt, wird das Untermenü sichtbar gemacht*/
+.dropDown:hover .subMenu {
+  opacity: 1; /* ;Macht SubMenue sichtbar*/
+  visibility: visible; /*Macht das Element greifbar*/
+  transform: translate(0); /*Bring es zur ursprünglicher Position*/
+}
+
+/*============
+HeroBereich
+===============*/
+.titelQuote {
+  font-family: "Pacifico", italic;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /**/
+}
+
+/*Hintergrund Bild hinzufügen*/
+.titelQuote::before {
+  content: ""; /*leer Lassen für Platz halter*/
+  position: absolute;
+  inset: 0; /*Abstände 0 zur POSITION RELATIVE*/
+  background: url("../assets/icons/heroBackgroundPastry.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.titelQuote h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.quoteMe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 2rem;
+  flex: 1;
+  min-height: 60vh;
+}
+
+.quoteIntro {
+  display: flex;
+  font-family: "Playfair Display", serif;
+  max-width: 80%;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-right: 2rem;
+}
+
+.portrait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portrait .portraitImg {
+  width: 430px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/*============
+Grid-Rezepte
+===============*/
+
+h3 {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 2rem;
+  font-style: italic;
+  text-transform: uppercase; /* alles groß */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* leichter Schatten */
+}
+
+/*Ohne VH Ansonten verschiebt es sich*/
+#rezepte {
+  display: grid;
+  grid-template-columns: repeat(3, auto); /*Auto = Passt sich dem Inhalt an*/
+  grid-template-rows: repeat(3, auto); /*Auto = Passt sich dem Inhalt an*/
+  max-width: 1200px; /*NIcht die ganze Breite des Bildschirms einnehmen damit zentriert*/
+  margin: 9rem auto;
+  justify-items: center;
+}
+
+[class^="rezeptItem"] {
+  /*Damit styled man nur die Klassen welche das Wort rezeptItem enthalten*/
+  display: flex;
+  flex-direction: column; /*DAmit Bild, RezeptÜberschrift, Text und Infos untereinander sind*/
+  align-items: start; /* Linksbündig*/
+  max-width: 100%;
+  margin-bottom: 2rem;
+  border-bottom: #333 dotted 10px;
+}
+
+[class^="rezeptName"] {
+  cursor: pointer;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+/*Brauch kein Flex, Block reicht*/
+.rezeptBilder {
+  display: block;
+  max-height: 400px;
+  max-width: 400px;
+  object-fit: cover;
+}
+
+.rezeptBeschreibung {
+  /*Damit der Text nur die Breite innerhalb des Containers nimmt*/
+  max-width: 300px;
+  margin: 0;
+}
+
+.rezeptFooter {
+  margin-top: auto;
+}
+
+.backingClock {
+  /*SVG Uhr im Rezept*/
+  height: 25px;
+  width: 25px;
+  margin-top: 1rem;
+}
+
+.rezeptSkills {
+  margin-top: auto;
+}
+
+.rezeptZeit,
+.rezeptSkills {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.skillImg {
+  height: 40px;
+  width: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*============
+Footerbereich
+===============*/
+
+/* Footer Bereich mit gleichem Hintergrund wie Titelleiste*/
+
+footer {
+  position: relative;
+  width: auto;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 10px solid transparent;
+  border-image: linear-gradient(to right, transparent, #e75480, transparent) 1;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../assets/icons/heroBackgroundPastry.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: -1;
+  border-top: 10px solid transparent;
+  border-image: linear-gradient(to right, transparent, #e75480, transparent) 1;
+}
+
+h5 {
+  font-size: 30px;
+  font-style: italic;
+}
+
+/*Damit Copyright und Logo einen Flex Container erhalten*/
+#bottomFooter {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+/*Damit Copyright und Logo nebeneinander stehen können*/
+#copyright {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/*Logo Beat Fade Animation*/
+@keyframes beatFade {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+.bounce {
+  animation: beatFade 0.6s ease-in-out;
+  cursor: pointer;
+}
+
+input {
+font-style: inherit;
+font-family: inherit;
+
+}
