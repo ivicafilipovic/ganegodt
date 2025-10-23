@@ -45,3 +45,20 @@ $(".footerLogo").on("mouseenter", function () {
   void logbounce[0].offsetWidth; // Reflow erzwingen
   logbounce.addClass("bounce"); //Animation starten
 });
+
+///////Smooth Fade In Animation///////
+
+var observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');// CSS Show wird hinzugefügt
+      observer.unobserve(entry.target)
+    }
+  });
+});
+
+
+var hiddenElements = document.querySelectorAll('.fade-in'); // fade inn wird erstellt
+hiddenElements.forEach((element)=>observer.observe(element));
+
+

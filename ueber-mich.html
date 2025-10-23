@@ -30,74 +30,76 @@
 
   <body>
     <!-------------------Navigationsmenue---------------------->
-
-    <nav class="navigation">
-      <div class="leftLogo">
-        <img
-          class="logoGanegodt"
-          src="./assets/icons/Design_ohne_Titel_Logos_ohne_Hintergrund.png"
-          alt="GanegodtLogo"
-        />
-      </div>
-      <ul class="list">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./ueber-mich.html" aria-current="page">Über mich</a></li>
-
-        <!-------------------Dropdownmenue---------------------->
-
-        <li class="dropDown">
-          <a href="./rezepte.html">Rezepte</a>
-          <ul class="subMenu">
-            <li><a href="./torten.html">Torten</a></li>
-            <li><a href="./snacks.html">Snacks</a></li>
-            <li><a href="./desserts.html">Desserts</a></li>
-          </ul>
-        </li>
-
-        <li><a href="./kontakt.html">Kontakt</a></li>
-      </ul>
-      <div class="rightItem">
-        <form action="#">
-          <input
-            id="SearchInput"
-            type="search"
-            name="search"
-            placeholder="Suche"
-            aria-label="Suche"
+    <div class="backgroundWrapper">
+      <nav class="navigation">
+        <div class="leftLogo">
+          <img
+            class="logoGanegodt"
+            src="./assets/icons/Design_ohne_Titel_Logos_ohne_Hintergrund.png"
+            alt="GanegodtLogo"
           />
-        </form>
-      </div>
-    </nav>
+        </div>
+        <ul class="list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./ueber-mich.html" aria-current="page">Über mich</a></li>
 
-    <main class="ueberMich">
-      <aside class="uebermichImage">
-        <img
-          class="portraitueberMich"
-          src="./assets/images/portrait/portraitkatrine2.avif"
-          alt=""
-        />
-      </aside>
-      <section class="uebermichText">
-        <h1>Über Ganegodt</h1>
-        <h2>
-          Willkommen, freut mich, dass du herein schaust! ​ Es bedeutet mir sehr
-          viel.
-        </h2>
-        <p class="ueberMichBeschreibung">
-          Ich bin Katrine Morell, Gründerin von Ganegodt. Ich komme aus Dänemark
-          und lebe heute in der Schweiz, wo ich meine Liebe zum Kochen und
-          Backen auslebe. Ich habe Ernährung und Gesundheit studiert – doch
-          trotz meines Wissens über gesunde Ernährung bin ich eine echte
-          Naschkatze. Ich liebe Kuchen, Torten und Schokolade genauso sehr wie
-          frische, einfache Alltagsgerichte. Ganegodt ist dänisch und bedeutet
-          Gaumenschmaus – und genau das möchte ich mit dir teilen: leckere
-          Rezepte mit einem Hauch Norden und ganz viel Herz. 💛
-        </p>
-      </section>
-    </main>
+          <!-------------------Dropdownmenue---------------------->
+
+          <li class="dropDown">
+            <a href="./rezepte.html">Rezepte</a>
+            <ul class="subMenu">
+              <li><a href="./torten.html">Torten</a></li>
+              <li><a href="./snacks.html">Snacks</a></li>
+              <li><a href="./desserts.html">Desserts</a></li>
+            </ul>
+          </li>
+
+          <li><a href="./kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="rightItem">
+          <form action="#">
+            <input
+              id="SearchInput"
+              type="search"
+              name="search"
+              placeholder="Suche"
+              aria-label="Suche"
+            />
+          </form>
+        </div>
+      </nav>
+
+      <main class="ueberMich fade-in">
+        <aside class="uebermichImage">
+          <img
+            class="portraitueberMich"
+            src="./assets/images/portrait/portraitkatrine2.avif"
+            alt=""
+          />
+        </aside>
+        <section class="uebermichText">
+          <h1>Über Ganegodt</h1>
+          <h2>
+            Willkommen, freut mich, dass du herein schaust! ​ Es bedeutet mir
+            sehr viel.
+          </h2>
+          <p class="ueberMichBeschreibung">
+            Ich bin Katrine Morell, Gründerin von Ganegodt. Ich komme aus
+            Dänemark und lebe heute in der Schweiz, wo ich meine Liebe zum
+            Kochen und Backen auslebe. Ich habe Ernährung und Gesundheit
+            studiert – doch trotz meines Wissens über gesunde Ernährung bin ich
+            eine echte Naschkatze. Ich liebe Kuchen, Torten und Schokolade
+            genauso sehr wie frische, einfache Alltagsgerichte. Ganegodt ist
+            dänisch und bedeutet Gaumenschmaus – und genau das möchte ich mit
+            dir teilen: leckere Rezepte mit einem Hauch Norden und ganz viel
+            Herz. 💛
+          </p>
+        </section>
+      </main>
+    </div>
 
     <!-------------------Footerbereich---------------------->
-    <footer>
+    <footer class="indexFooter fade-in">
       <!-- Social Media Logos -->
       <h5>Follow me on on</h5>
       <div id="socialMedia">

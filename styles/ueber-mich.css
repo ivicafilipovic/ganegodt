@@ -1,21 +1,41 @@
 /*============
 Navigationbar
 ===============*/
-.navigation::after {
-  content: ""; /*leer Lassen für Platz halter*/
-  position: absolute;
-  inset: 0; /*Abstände 0 zur POSITION RELATIVE*/
-  background: url("../assets/icons/heroBackgroundPastry.jpg");
+
+/*=====Hintergrund Wrapper====*/
+
+.backgroundWrapper {
   background-size: cover;
-  background-position: center;
-  opacity: 0.1;
-  z-index: -1;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.backgroundWrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../assets/icons/heroBackgroundPastry.jpg") center/cover
+    no-repeat;
+  opacity: 0.1; /* leicht transparent */
+  z-index: -1; /* liegt hinter allem */
+}
+
+main {
+  position: relative;
+
+  z-index: 1;
+  padding: 2rem 0;
 }
 
 /*======================
   MAINBEREREICH
 ========================*/
 
+/*=====Über Mich Flex Cointainer====*/
 .ueberMich {
   display: flex;
   min-height: 60vh;
@@ -25,15 +45,15 @@ Navigationbar
   justify-content: space-evenly;
 }
 
+/*=====Über Mich Bild====*/
 .portraitueberMich {
   height: 400px;
   width: 350px;
   margin-top: 4rem;
   padding-left: 3rem;
   max-width: 600px;
- 
 }
-
+/*=====Über Mich Titel====*/
 .uebermichText {
   padding-right: 5rem;
   align-self: start;
@@ -41,10 +61,10 @@ Navigationbar
   margin-right: 3rem;
   max-width: 600px;
   text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
 }
-
+/*=====Über Mich Beschreibung===*/
 .ueberMichBeschreibung {
   font-size: 20px;
   font-style: italic;

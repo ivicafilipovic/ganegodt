@@ -29,61 +29,56 @@
 
   <body>
     <!-------------------Navigationsmenue---------------------->
- 
-      <nav class="navigation">
-        <div class="leftLogo">
-          <img
-            class="logoGanegodt"
-            src="./assets/icons/Design_ohne_Titel_Logos_ohne_Hintergrund.png"
-            alt="GanegodtLogo"
+
+    <nav class="navigation">
+      <div class="leftLogo">
+        <img
+          class="logoGanegodt"
+          src="./assets/icons/Design_ohne_Titel_Logos_ohne_Hintergrund.png"
+          alt="GanegodtLogo"
+        />
+      </div>
+      <ul class="list">
+        <li><a href="./index.html" aria-current="page">Home</a></li>
+        <li><a href="./ueber-mich.html">Über mich</a></li>
+
+        <!-------------------Dropdownmenue---------------------->
+
+        <li class="dropDown">
+          <a href="./rezepte.html">Rezepte</a>
+          <ul class="subMenu">
+            <li><a href="./torten.html">Torten</a></li>
+            <li><a href="./snacks.html">Snacks</a></li>
+            <li><a href="./desserts.html">Desserts</a></li>
+          </ul>
+        </li>
+
+        <li><a href="./kontakt.html">Kontakt</a></li>
+      </ul>
+      <div class="rightItem">
+        <form action="#">
+          <input
+            id="SearchInput"
+            type="search"
+            name="search"
+            placeholder="Suche"
+            aria-label="Suche"
           />
-        </div>
-        <ul class="list">
-          <li><a href="./index.html" aria-current="page">Home</a></li>
-          <li><a href="./ueber-mich.html">Über mich</a></li>
-
-          <!-------------------Dropdownmenue---------------------->
-
-          <li class="dropDown">
-            <a href="./rezepte.html">Rezepte</a>
-            <ul class="subMenu">
-              <li><a href="./torten.html">Torten</a></li>
-              <li><a href="./snacks.html">Snacks</a></li>
-              <li><a href="./desserts.html">Desserts</a></li>
-            </ul>
-          </li>
-
-          <li><a href="./kontakt.html">Kontakt</a></li>
-        </ul>
-        <div class="rightItem">
-          <form action="#">
-            <input
-              id="SearchInput"
-              type="search"
-              name="search"
-              placeholder="Suche"
-              aria-label="Suche"
-            />
-          </form>
-        </div>
-      </nav>
- 
+        </form>
+      </div>
+    </nav>
 
     <!-------------------HeroBereich---------------------->
 
-    <header class="titelQuote">
+    <header class="titelQuote fade-in">
       <h1>Leckeres Essen, Rezepte und Süssigkeiten</h1>
-      <div class="quoteMe">
+      <div class="quoteMe fade-in">
         <h2 class="quoteIntro">
           Hier findest du leckere Alltagsgerichte und viele Rezepte für
           köstliche Süßigkeiten – genau das ist meine Leidenschaft. Lass dich
           inspirieren! Du fragst dich, was Ganegodt bedeutet? Ganegodt ist
           dänisch und heißt Gaumenschmaus – und genau das möchte ich dir bieten!
         </h2>
-        <h3>
-
-          
-        </h3>
 
         <div class="portrait">
           <img
@@ -97,11 +92,16 @@
 
     <!-------------------Gridrezepte---------------------->
 
-    <h3>MEINE LIEBLINGS REZEPTE</h3>
+    <h3 class="rezepteTitel .fade-in">MEINE LIEBLINGS REZEPTE</h3>
+    <h4 class="rezepteUntertitel fade-in">
+      Hier findest du eine Auswahl meiner liebsten Rezepte – von süßen Torten
+      bis hin zu herzhaften Snacks <br />Sie sind alle einfach, lecker und mit
+      ganz viel Liebe gemacht 💛
+    </h4>
 
     <section id="rezepte">
       <!--Rezept 1-->
-      <div class="rezeptItem1">
+      <div class="rezeptItem1 fade-in">
         <img
           class="rezeptBilder"
           src="./assets/images/snacks/spinatwaffeln2.avif"
@@ -129,7 +129,7 @@
         </div>
       </div>
       <!--Rezept 2-->
-      <div class="rezeptItem2">
+      <div class="rezeptItem2 fade-in">
         <img
           class="rezeptBilder"
           src="./assets/images/torten/beerentorte2.avif"
@@ -156,7 +156,7 @@
         </div>
       </div>
       <!--Rezept 3-->
-      <div class="rezeptItem3">
+      <div class="rezeptItem3 fade-in">
         <img
           class="rezeptBilder"
           src="./assets/images/torten/frühlingstarte_von_oben.avif"
@@ -184,7 +184,7 @@
         </div>
       </div>
       <!--Rezept 4-->
-      <div class="rezeptItem4">
+      <div class="rezeptItem4 fade-in">
         <img
           class="rezeptBilder"
           src="./assets/images/desserts/limettenkuchen_mit_Muenze_LImette_Frosting.avif"
@@ -212,7 +212,7 @@
         </div>
       </div>
       <!--Rezept 5-->
-      <div class="rezeptItem5">
+      <div class="rezeptItem5 fade-in">
         <img
           class="rezeptBilder"
           src="./assets/images/torten/muerbeteig_mit_Haselnussfüllung.avif"
@@ -240,7 +240,7 @@
         </div>
       </div>
       <!--Rezept 6-->
-      <div class="rezeptItem6">
+      <div class="rezeptItem6 fade-in">
         <img
           class="rezeptBilder"
           src="./assets/images/desserts/muffins_mit_karamellschokolade_oben.avif"
@@ -271,7 +271,7 @@
         </div>
       </div>
       <!--Rezept 7-->
-      <div class="rezeptItem7">
+      <div class="rezeptItem7 fade-in">
         <img
           class="rezeptBilder"
           src="./assets/images/torten/pistazientarte_limette_thymian_oben.avif"
@@ -301,7 +301,7 @@
         </div>
       </div>
       <!--Rezept 8-->
-      <div class="rezeptItem8">
+      <div class="rezeptItem8 fade-in">
         <img
           class="rezeptBilder"
           src="./assets/images/torten/zitronetarte_von_oben.avif"
@@ -329,7 +329,7 @@
         </div>
       </div>
       <!--Rezept 9-->
-      <div class="rezeptItem9">
+      <div class="rezeptItem9 fade-in">
         <img
           class="rezeptBilder"
           src="./assets/images/snacks/overnight_oats_mit_chiasamenquarkfrüchten.avif"
@@ -357,7 +357,7 @@
       </div>
     </section>
     <!-------------------Footerbereich---------------------->
-    <footer>
+    <footer class="indexFooter fade-in">
       <!-- Social Media Logos -->
       <h5>Follow me on on</h5>
       <div id="socialMedia">
