@@ -1,3 +1,18 @@
+//under Construction Alert//
+/*
+Swal.fire({
+title:'Willkommen bei Ganegodt',
+html:`<img src="./assets/icons/Design_ohne_Titel_Logos_ohne_Hintergrund.png"
+          alt="GanegodtLog"
+          style="width:120px; height:120px  margin-bottom:1rem">
+           <p>Diese Website ist aktuell noch im Aufbau.</p>
+    <p>Folge mir auf Instagram 💛</p>`,
+confirmButtonText: 'Verstanden',
+confirmButtonColor: '#e73c7e',
+})*/
+
+
+
 ///////Gridrezepte//////
 //Damit man nur die Zahl bei data-skill ändern kann und dann wird die Anzahl Bilder veränder
 var skillContainer = $(".rezeptSkills"); //
@@ -60,5 +75,7 @@ var observer = new IntersectionObserver((entries) => {
 
 var hiddenElements = document.querySelectorAll('.fade-in'); // fade inn wird erstellt
 hiddenElements.forEach((element)=>observer.observe(element));
+
+
 
 

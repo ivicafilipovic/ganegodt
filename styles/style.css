@@ -136,50 +136,57 @@ HeroBereich
   text-align: center; /**/
 }
 
-
-
 .titelQuote h1 {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
   font-style: italic;
   font-weight: bold;
 }
-h1{
-color: #3a2d2d;
-
+h1 {
+  color: #3a2d2d;
 }
 
 .quoteMe {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-top: 2rem;
   gap: 2rem;
-  flex: 1;
+  margin-top: 2rem;
   min-height: 60vh;
 }
 
 .quoteIntro {
-  display: flex;
   font-family: "Playfair Display", serif;
-  max-width: 80%;
-  line-height: 1.6;
+  max-width: 65%;
   font-weight: 400;
   font-size: 1.5rem;
   font-style: italic;
-  margin-right: 2rem;
+  align-self: flex-start;
+  text-align: start;
+  line-height: 1.4;
 }
 
-.portrait {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.quoteSpan{
+float: right;
+font-size: smaller;
+
 }
 
+.introColorOne{
+color:#413e3e;
+
+}
+
+.introColorTwo {
+color: #686666; 
+
+}
 .portrait .portraitImg {
-  width: 430px;
+  width: 480px;
   height: auto;
   border-radius: 50%;
+  padding-right:  0.5;
+
 }
 
 /*============
@@ -197,12 +204,11 @@ Grid-Rezepte
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* leichter Schatten */
 }
 
-.rezepteUntertitel{
-height: auto;
-width: 100%;
-text-align: center;
-font-style: italic;
-
+.rezepteUntertitel {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  font-style: italic;
 }
 
 /*Ohne VH Ansonten verschiebt es sich*/
@@ -228,13 +234,6 @@ font-style: italic;
   border-bottom: #333 dotted 10px;
 }
 
-[class^="rezeptName"] {
-  cursor: pointer;
-}
-
-h4 {
-  font-size: 20px;
-}
 
 /*Brauch kein Flex, Block reicht*/
 .rezeptBilder {
@@ -342,13 +341,16 @@ input {
   font-family: inherit;
 }
 
-.show.fade-in{ /**Fade Animation wird wieder eingeblendet durch javascrupt getriggert**/
-opacity: 1;
-transform: translateY(0);
+.show.fade-in {
+  /**Fade Animation wird wieder eingeblendet durch javascrupt getriggert**/
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.fade-in { /**Start Zustand durch Javascript getriggert**/
- opacity: 0; 
- transform: translateY(20px);
- transition: all 2s ease-in-out;
+.fade-in {
+  /**Start Zustand durch Javascript getriggert**/
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 2s ease-in-out;
 }
+

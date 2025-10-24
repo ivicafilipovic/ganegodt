@@ -2,28 +2,6 @@
 Navigationbar
 ===============*/
 
-/*=====Hintergrund Wrapper====*/
-
-.backgroundWrapper {
-  background-size: cover;
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.backgroundWrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url("../assets/icons/heroBackgroundPastry.jpg") center/cover
-    no-repeat;
-  opacity: 0.1; /* leicht transparent */
-  z-index: -1; /* liegt hinter allem */
-}
-
 main {
   position: relative;
 
@@ -63,6 +41,7 @@ main {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
+  color: #3a2d2d;
 }
 /*=====Über Mich Beschreibung===*/
 .ueberMichBeschreibung {

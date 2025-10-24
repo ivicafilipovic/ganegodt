@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ganegodt-Leckes Essen, Rezepte und Süssigkeiten</title>
-    <!-- GOOGLE FONT SCRIPT -->
+    <!-- GOOGLE FONT DNS LINK -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Modern+Antiqua&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
-    <!-- GOOGLE FONT SCRIPT -->
+    <!-- GOOGLE FONT DNS LINK -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,6 +23,9 @@
       src="https://kit.fontawesome.com/3760fcb06d.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Sweet Alert DNS Link -->
+
     <!-- Externes CSS Script -->
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
@@ -74,10 +77,16 @@
       <h1>Leckeres Essen, Rezepte und Süssigkeiten</h1>
       <div class="quoteMe fade-in">
         <h2 class="quoteIntro">
-          Hier findest du leckere Alltagsgerichte und viele Rezepte für
-          köstliche Süßigkeiten – genau das ist meine Leidenschaft. Lass dich
-          inspirieren! Du fragst dich, was Ganegodt bedeutet? Ganegodt ist
-          dänisch und heißt Gaumenschmaus – und genau das möchte ich dir bieten!
+          <span class="introColorOne"
+            >Hier findest du leckere Alltagsgerichte und viele Rezepte für
+            köstliche Süßigkeiten – genau das ist meine Leidenschaft. Lass dich
+            inspirieren! Du fragst dich, was Ganegodt bedeutet?</span
+          >
+          <span class="introColorTwo"
+            >Ganegodt ist dänisch und heißt Gaumenschmaus und genau das möchte
+            ich dir bieten!</span
+          >
+          <br /><span class="quoteSpan">-Katrine Morell 💛</span>
         </h2>
 
         <div class="portrait">
@@ -93,21 +102,23 @@
     <!-------------------Gridrezepte---------------------->
 
     <h3 class="rezepteTitel .fade-in">MEINE LIEBLINGS REZEPTE</h3>
-    <h4 class="rezepteUntertitel fade-in">
-      Hier findest du eine Auswahl meiner liebsten Rezepte – von süßen Torten
-      bis hin zu herzhaften Snacks <br />Sie sind alle einfach, lecker und mit
-      ganz viel Liebe gemacht 💛
-    </h4>
+    <p class="rezepteUntertitel fade-in">
+      Eine Auswahl meiner liebsten Rezepte – von süßen Torten bis hin zu
+      herzhaften Snacks
+    </p>
+    <p class="rezepteUntertitel fade-in">
+      Sie sind alle einfach, lecker und mit ganz viel Liebe gemacht 💛
+    </p>
 
     <section id="rezepte">
       <!--Rezept 1-->
-      <div class="rezeptItem1 fade-in">
+      <div class="rezeptItem fade-in">
         <img
           class="rezeptBilder"
           src="./assets/images/snacks/spinatwaffeln2.avif"
           alt="Spinatwaffel"
         />
-        <h4 class="rezeptName1">Spinatwaffel</h4>
+        <h4>Spinatwaffel</h4>
         <p class="rezeptBeschreibung">
           „Leckere grüne Spinatwaffeln – herzhaft, gesund, um heimlich etwas
           mehr Gemüse zu genießen. Schnell gemacht mit Haferflocken, Spinat und
@@ -129,13 +140,13 @@
         </div>
       </div>
       <!--Rezept 2-->
-      <div class="rezeptItem2 fade-in">
+      <div class="rezeptItem fade-in">
         <img
           class="rezeptBilder"
           src="./assets/images/torten/beerentorte2.avif"
           alt="Beerentorte"
         />
-        <h4 class="rezeptName2">Beerentorte</h4>
+        <h4>Beerentorte</h4>
         <p class="rezeptBeschreibung">
           „Beerentorte – süß, fruchtig und unwiderstehlich lecker! Perfekt für
           jeden Anlass, bei dem man Eindruck machen möchte.“
@@ -156,13 +167,13 @@
         </div>
       </div>
       <!--Rezept 3-->
-      <div class="rezeptItem3 fade-in">
+      <div class="rezeptItem fade-in">
         <img
           class="rezeptBilder"
           src="./assets/images/torten/frühlingstarte_von_oben.avif"
           alt="Frühlingstarte"
         />
-        <h4 class="rezeptName3">Frühlings Tarte</h4>
+        <h4>Frühlings Tarte</h4>
         <p class="rezeptBeschreibung">
           „Mmmh, lecker! Diese Spargel-Poulet-Tarte überzeugt mit Geschmack und
           einfacher Zubereitung.-Perfekt für Spargelsaison und vielseitig“
@@ -184,13 +195,13 @@
         </div>
       </div>
       <!--Rezept 4-->
-      <div class="rezeptItem4 fade-in">
+      <div class="rezeptItem fade-in">
         <img
           class="rezeptBilder"
           src="./assets/images/desserts/limettenkuchen_mit_Muenze_LImette_Frosting.avif"
           alt="Limettenkuchen"
         />
-        <h4 class="rezeptName4">Limettenkuchen mit Münze-Limette</h4>
+        <h4>Limettenkuchen mit Münze-Limette</h4>
         <p class="rezeptBeschreibung">
           „Frischer Limettenkuchen mit einem Hauch Minze – saftig, zitronig und
           leicht aromatisch. Perfekt für alle, die fruchtige Leckereien lieben
@@ -212,13 +223,13 @@
         </div>
       </div>
       <!--Rezept 5-->
-      <div class="rezeptItem5 fade-in">
+      <div class="rezeptItem fade-in">
         <img
           class="rezeptBilder"
           src="./assets/images/torten/muerbeteig_mit_Haselnussfüllung.avif"
           alt="Mürbeteig mit Haselnuss"
         />
-        <h4 class="rezeptName5">Mürbeteig-Tarte</h4>
+        <h4>Mürbeteig-Tarte</h4>
         <p class="rezeptBeschreibung">
           „Diese Tarte besteht aus einem knusprigen Mürbeteig und einer
           Haselnussfüllung mit Zimt und Ingwer. Getoppt wird die Tarte mit einer
@@ -240,15 +251,13 @@
         </div>
       </div>
       <!--Rezept 6-->
-      <div class="rezeptItem6 fade-in">
+      <div class="rezeptItem fade-in">
         <img
           class="rezeptBilder"
           src="./assets/images/desserts/muffins_mit_karamellschokolade_oben.avif"
           alt="Muffins mit Karamelschokolade"
         />
-        <h4 class="rezeptName6">
-          Muffin mit Karamellschokolade <br />&#38; Rhabarberkompott
-        </h4>
+        <h4>Muffin mit Karamellschokolade &#38; Rhabarberkompott</h4>
         <p class="rezeptBeschreibung">
           „Leckere Rhabarber-Karamell-Muffins – perfekt, um Reste von Kompott
           oder Beerenmousse zu verwerten! Saftig, süß und mit einer feinen
@@ -271,15 +280,13 @@
         </div>
       </div>
       <!--Rezept 7-->
-      <div class="rezeptItem7 fade-in">
+      <div class="rezeptItem fade-in">
         <img
           class="rezeptBilder"
           src="./assets/images/torten/pistazientarte_limette_thymian_oben.avif"
           alt="Pistazientarte"
         />
-        <h4 class="rezeptName7">
-          Pistazientarte mit Thymian <br />&#38; Limette
-        </h4>
+        <h4>Pistazientarte mit Thymian &#38; Limette</h4>
         <p class="rezeptBeschreibung">
           „Fruchtig-frische Pistazientarte mit Thymian und Limette –
           zart-knuspriger Boden trifft auf cremige Pistazienfüllung, verfeinert
@@ -301,13 +308,13 @@
         </div>
       </div>
       <!--Rezept 8-->
-      <div class="rezeptItem8 fade-in">
+      <div class="rezeptItem fade-in">
         <img
           class="rezeptBilder"
           src="./assets/images/torten/zitronetarte_von_oben.avif"
           alt="Zitronentarte"
         />
-        <h4 class="rezeptName8">Tarte mit Zitrone und Thymian</h4>
+        <h4>Tarte mit Zitrone<br />& Thymian</h4>
         <p class="rezeptBeschreibung">
           „Frische Zitronen-Thymian-Tarte – knuspriger Boden trifft auf cremige,
           fruchtige Füllung mit einer feinen Note von Thymian. Ein leichter,
@@ -329,15 +336,13 @@
         </div>
       </div>
       <!--Rezept 9-->
-      <div class="rezeptItem9 fade-in">
+      <div class="rezeptItem fade-in">
         <img
           class="rezeptBilder"
           src="./assets/images/snacks/overnight_oats_mit_chiasamenquarkfrüchten.avif"
           alt="overNightOats"
         />
-        <h4 class="rezeptName9">
-          Overnight Oats mit Chiasamen,<br />Quark &#38; Früchte
-        </h4>
+        <h4>Overnight Oats</h4>
         <p class="rezeptBeschreibung">
           „Im hektischen Alltag fehlt oft die Zeit für ein großes, leckeres
           Frühstück. Overnight Oats – sind die perfekte Alternative: schnell
@@ -345,8 +350,11 @@
         </p>
         <div class="rezeptFooter">
           <div class="rezeptZeit">
-            <img class="backingClock" src="./assets/icons/clockSVG.svg" "
-            alt="Clock" />
+            <img
+              class="backingClock"
+              src="./assets/icons/clockSVG.svg"
+              alt="Clock"
+            />
             <p>5 Min</p>
           </div>
           <div class="rezeptSkills" data-skill="1">
@@ -417,7 +425,11 @@
         </div>
       </div>
     </footer>
-    <!-- JQUERY Script -->
+
+    <!-- Sweet Alert DNS DNS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.3/dist/sweetalert2.all.min.js"></script>
+
+    <!-- JQUERY DNS Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Externe Javascript Datei -->
     <script src="./js/main.js"></script>
