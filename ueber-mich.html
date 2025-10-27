@@ -23,13 +23,13 @@
       src="https://kit.fontawesome.com/3760fcb06d.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Externes CSS Script -->
+    <!-- External CSS Script -->
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/ueber-mich.css" />
   </head>
 
   <body>
-    <!-------------------Navigationsmenue---------------------->
+    <!-------------------Navigation Bar---------------------->
     <div class="backgroundWrapper">
       <nav class="navigation">
         <div class="leftLogo">
@@ -43,7 +43,7 @@
           <li><a href="./index.html">Home</a></li>
           <li><a href="./ueber-mich.html" aria-current="page">Über mich</a></li>
 
-          <!-------------------Dropdownmenue---------------------->
+          <!--*Dropdownmenue-->
 
           <li class="dropDown">
             <a href="./rezepte.html">Rezepte</a>
@@ -66,8 +66,9 @@
               aria-label="Suche"
             />
           </form>
+        </div>
       </nav>
-
+      <!--*Über Mich Flexbox Container-->
       <main class="ueberMich fade-in">
         <aside class="uebermichImage">
           <img
@@ -76,7 +77,9 @@
             alt=""
           />
         </aside>
-        <section class="uebermichText">
+
+        <!--*Über Mich Textbereich-->
+        <section class="uebermichText fade-in">
           <h1>Über Ganegodt</h1>
           <h2>
             Willkommen, freut mich, dass du herein schaust! ​ Es bedeutet mir
@@ -97,16 +100,15 @@
       </main>
     </div>
 
-    <!-------------------Footerbereich---------------------->
+    <!--*Footerbereich-->
     <footer class="indexFooter fade-in">
-      <!-- Social Media Logos -->
+      <!-- *Social Media Footer -->
       <h5>Follow me on on</h5>
       <div id="socialMedia">
         <a
           href="https://www.facebook.com/Ganegodt/"
           target="_blank"
           rel="noopener noreferrer"
-          rel="noreferrer"
           aria-label="Facebook"
         >
           <i
@@ -155,12 +157,14 @@
             style="width: 90px; height: 50px"
             alt="Logo"
           />
+          <!--todo LINK ZU HOME Seite erstellen-->
         </div>
       </div>
     </footer>
-    <!-- JQUERY Script -->
+    
+    <!--*JQUERY Script-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- Externe Javascript Datei -->
+    <!--*Externe Javascript Datei-->
     <script src="./js/main.js"></script>
-  </body>
+</body>
 </html>

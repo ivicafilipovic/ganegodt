@@ -1,23 +1,10 @@
-//under Construction Alert//
-/*
-Swal.fire({
-title:'Willkommen bei Ganegodt',
-html:`<img src="./assets/icons/Design_ohne_Titel_Logos_ohne_Hintergrund.png"
-          alt="GanegodtLog"
-          style="width:120px; height:120px  margin-bottom:1rem">
-           <p>Diese Website ist aktuell noch im Aufbau.</p>
-    <p>Folge mir auf Instagram 💛</p>`,
-confirmButtonText: 'Verstanden',
-confirmButtonColor: '#e73c7e',
-})*/
+//*under Construction Alert//
 
-
-
-///////Gridrezepte//////
-//Damit man nur die Zahl bei data-skill ändern kann und dann wird die Anzahl Bilder veränder
-var skillContainer = $(".rezeptSkills"); //
+//**Gridrezepte//
+//!Damit man nur die Zahl bei data-skill ändern kann und dann wird die Anzahl Bilder veränder
+var skillContainer = $(".rezeptSkills"); 
 skillContainer.each(function () {
-  // "each"wird für jedes Element mit dem Element in der definieren Variable ausgeführt
+  //!"each"wird für jedes Element mit dem Element in der definieren Variable ausgeführt
   var skillLevel = $(this).data("skill"); //"this" wird nur auf dieses Element angwendet
   var iconsContainer = $(this).find(".skillIcons");
 
@@ -31,8 +18,8 @@ skillContainer.each(function () {
   }
 });
 
-///////Footer///////
-//SocialMediaFooter//
+///*Footer//
+//*SocialMediaFooter//
 var icon = $(".fa-brands, .fa-square-envelope");
 icon.on("mouseenter", function () {
   $(this).addClass("fa-bounce");
@@ -41,8 +28,8 @@ icon.on("mouseleave", function () {
   $(this).removeClass("fa-bounce");
 });
 
-//Logo Beat Fade Animation//
-//document.ready heisst erst Function ausführen wenn ganzes HTML geladen wird
+//*Logo Beat Fade Animation//
+//!document.ready heisst erst Function ausführen wenn ganzes HTML geladen wird
 $(document).ready(function () {
   //
   $(".footerLogo").on("mouseenter", function () {
@@ -53,7 +40,7 @@ $(document).ready(function () {
   });
 });
 
-//Damit die Animation bei jedem Hover neu startet//
+//!Damit die Animation bei jedem Hover neu startet//
 $(".footerLogo").on("mouseenter", function () {
   var logbounce = $(this);
   logbounce.removeClass("bounce"); //Alte Animatoon entfernen
@@ -61,21 +48,18 @@ $(".footerLogo").on("mouseenter", function () {
   logbounce.addClass("bounce"); //Animation starten
 });
 
-///////Smooth Fade In Animation///////
+//*Smooth Fade In Animation//
 
 var observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('show');// CSS Show wird hinzugefügt
-      observer.unobserve(entry.target)
+      entry.target.classList.add("show"); // CSS Show wird hinzugefügt
+      observer.unobserve(entry.target);
     }
   });
+
 });
 
-
-var hiddenElements = document.querySelectorAll('.fade-in'); // fade inn wird erstellt
-hiddenElements.forEach((element)=>observer.observe(element));
-
-
-
+var hiddenElements = document.querySelectorAll(".fade-in"); // fade inn wird erstellt
+hiddenElements.forEach((element) => observer.observe(element));
 

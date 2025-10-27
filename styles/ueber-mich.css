@@ -1,6 +1,4 @@
-/*============
-Navigationbar
-===============*/
+/**Navigationbar*/
 
 main {
   position: relative;
@@ -9,11 +7,9 @@ main {
   padding: 2rem 0;
 }
 
-/*======================
-  MAINBEREREICH
-========================*/
+/**MAIN BEREICH*/
 
-/*=====Über Mich Flex Cointainer====*/
+/**Über Mich Flexbox Container*/
 .ueberMich {
   display: flex;
   min-height: 60vh;
@@ -23,7 +19,7 @@ main {
   justify-content: space-evenly;
 }
 
-/*=====Über Mich Bild====*/
+/**Über Mich Bild*/
 .portraitueberMich {
   height: 400px;
   width: 350px;
@@ -31,7 +27,7 @@ main {
   padding-left: 3rem;
   max-width: 600px;
 }
-/*=====Über Mich Titel====*/
+/**Über Mich Titel Text*/
 .uebermichText {
   padding-right: 5rem;
   align-self: start;
@@ -43,11 +39,9 @@ main {
   font-style: italic;
   color: #3a2d2d;
 }
-/*=====Über Mich Beschreibung===*/
+/**Über Mich Beschreibung*/
 .ueberMichBeschreibung {
   font-size: 20px;
   font-style: italic;
   text-align: center;
 }
-
-

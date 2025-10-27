@@ -1,6 +1,5 @@
-/*============
-Navigationbar
-===============*/
+/**Navigationbar**/
+
 html {
   height: 100%;
   margin: 0;
@@ -34,9 +33,9 @@ body::before {
   border-bottom: 10px solid transparent;
   border-image: linear-gradient(to right, transparent, #e75480, transparent) 1;
   cursor: pointer;
-} /* Um eine farbige LInie unterhalb der Navbar zu erstellen*/
+} /*! Um eine farbige LInie unterhalb der Navbar zu erstellen*/
 
-/* .rightItem dient nur als Platzhalte, eventuell als Searchbutton verwenden*/
+/*!.rightItem dient nur als Platzhalte, eventuell als Searchbutton verwenden*/
 
 .leftLogo,
 .rightItem {
@@ -80,49 +79,52 @@ body::before {
   text-align: start;
   padding-left: 1rem;
   font-size: 1rem;
-  border: solid #e75480;
+  border: 4px solid #3a2d2d;
   border-radius: 30px;
   outline: none;
   box-shadow: none;
 }
 
-/* Dropdown Untermenue gestalung*/
+/*!Dropdown Untermenue gestalung*/
 .subMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
-  visibility: hidden; /* sanftes Einblenden*/
-  transform: translateY(
-    -1px
-  ); /* Starten versetzten von oben und gleitet nach unten*/
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Weiche Bewegung*/
+  visibility: hidden; /**sanftes Einblenden*/
+  transform: translate(/**Ist Zentriert und gleitet von oben nach unten*/
+    -40%,
+  0
+  ); 
+  transition: opacity 0.8s ease, transform 1s ease; /* Weiche Bewegung*/
   position: absolute;
   top: 100%;
   left: 0;
   list-style: none;
   margin: 0;
-  padding: 0;
-  background-color: #fffafa;
-  border: 1px solid #ddd;
-  min-width: 180px;
+  padding-bottom:  0.5rem;
+  padding-right: 2rem;
+  background-color: #3a2d2d;
+  border-radius: 10px;
+  min-width: 80px;
+  z-index: 2;
+  color: #fefbf5;
 }
-
 .subMenu li {
-  padding: 8px 12px;
+  padding: 0.7rem 1.8rem;
 }
 
-.subMenu li:hover {
-  background: #f0f0f0;
-}
 
-/* Wenn man über das Hauptmenü-Element fährt, wird das Untermenü sichtbar gemacht*/
+
+
+
+/**Wenn man über das Hauptmenü-Element fährt, wird das Untermenü sichtbar gemacht*/
 .dropDown:hover .subMenu {
-  opacity: 1; /* ;Macht SubMenue sichtbar*/
-  visibility: visible; /*Macht das Element greifbar*/
-  transform: translate(0); /*Bring es zur ursprünglicher Position*/
+  opacity: 1; /**Macht SubMenue sichtbar*/
+  visibility: visible; /**Macht das Element greifbar*/
 }
 
-/*============
-HeroBereich
-===============*/
+/**HeroBereich*/
 .titelQuote {
   font-family: "Pacifico", italic;
   margin: 0 auto;
@@ -166,32 +168,26 @@ h1 {
   line-height: 1.4;
 }
 
-.quoteSpan{
-float: right;
-font-size: smaller;
-
+.quoteSpan {
+  float: right;
+  font-size: smaller;
 }
 
-.introColorOne{
-color:#413e3e;
-
+.introColorOne {
+  color: #413e3e;
 }
 
 .introColorTwo {
-color: #686666; 
-
+  color: #686666;
 }
 .portrait .portraitImg {
   width: 480px;
   height: auto;
   border-radius: 50%;
-  padding-right:  0.5;
-
+  padding-right: 0.5;
 }
 
-/*============
-Grid-Rezepte
-===============*/
+/**Grid-Rezepte*/
 
 .rezepteTitel {
   height: auto;
@@ -211,7 +207,7 @@ Grid-Rezepte
   font-style: italic;
 }
 
-/*Ohne VH Ansonten verschiebt es sich*/
+/*!Ohne VH Ansonten verschiebt es sich*/
 #rezepte {
   display: grid;
   position: relative;
@@ -225,7 +221,7 @@ Grid-Rezepte
 }
 
 [class^="rezeptItem"] {
-  /*Damit styled man nur die Klassen welche das Wort rezeptItem enthalten*/
+  /*!Damit styled man nur die Klassen welche das Wort rezeptItem enthalten*/
   display: flex;
   flex-direction: column; /*DAmit Bild, RezeptÜberschrift, Text und Infos untereinander sind*/
   align-items: start; /* Linksbündig*/
@@ -234,8 +230,7 @@ Grid-Rezepte
   border-bottom: #333 dotted 10px;
 }
 
-
-/*Brauch kein Flex, Block reicht*/
+/*!Brauch kein Flex, Block reicht*/
 .rezeptBilder {
   display: block;
   max-height: 400px;
@@ -244,7 +239,7 @@ Grid-Rezepte
 }
 
 .rezeptBeschreibung {
-  /*Damit der Text nur die Breite innerhalb des Containers nimmt*/
+  /*!Damit der Text nur die Breite innerhalb des Containers nimmt*/
   max-width: 300px;
   margin: 0;
 }
@@ -254,7 +249,7 @@ Grid-Rezepte
 }
 
 .backingClock {
-  /*SVG Uhr im Rezept*/
+  /*!SVG Uhr im Rezept*/
   height: 25px;
   width: 25px;
   margin-top: 1rem;
@@ -281,11 +276,9 @@ Grid-Rezepte
   box-sizing: border-box;
 }
 
-/*============
-Footerbereich
-===============*/
+/**Footerbereich*/
 
-/* Footer Bereich mit gleichem Hintergrund wie Titelleiste*/
+/*!Footer Bereich mit gleichem Hintergrund wie Titelleiste*/
 
 .indexFooter {
   position: relative;
@@ -305,20 +298,20 @@ h5 {
   font-style: italic;
 }
 
-/*Damit Copyright und Logo einen Flex Container erhalten*/
+/*!Damit Copyright und Logo einen Flex Container erhalten*/
 #bottomFooter {
   display: flex;
   flex-direction: row;
   margin-top: 30px;
 }
-/*Damit Copyright und Logo nebeneinander stehen können*/
+/*!Damit Copyright und Logo nebeneinander stehen können*/
 #copyright {
   display: flex;
   align-items: center;
   gap: 40px;
 }
 
-/*Logo Beat Fade Animation*/
+/*!Logo Beat Fade Animation*/
 @keyframes beatFade {
   0%,
   100% {
@@ -341,16 +334,16 @@ input {
   font-family: inherit;
 }
 
-.show.fade-in {
-  /**Fade Animation wird wieder eingeblendet durch javascrupt getriggert**/
+.fade-in.show {
+  /*!Fade Animation(Elemente werden wieder eingeblendet durch JS getriggert*/
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
+  will-change: auto;
 }
 
 .fade-in {
-  /**Start Zustand durch Javascript getriggert**/
+  /*!Start Zustand durch Javascript getriggert*/
   opacity: 0;
   transform: translateY(20px);
   transition: all 2s ease-in-out;
 }
-
